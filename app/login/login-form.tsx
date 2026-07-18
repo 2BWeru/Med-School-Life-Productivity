@@ -24,12 +24,15 @@ export function LoginForm({ from }: { from: string }) {
     <form action={formAction} className="flex flex-col gap-4">
       <input type="hidden" name="from" value={from} />
       <div className="flex flex-col gap-1.5">
-        <Label htmlFor="email">Email</Label>
-        <Input id="email" name="email" type="email" placeholder="you@example.com" required />
-      </div>
-      <div className="flex flex-col gap-1.5">
         <Label htmlFor="password">Password</Label>
-        <Input id="password" name="password" type="password" placeholder="••••••••" required />
+        <Input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="••••••••"
+          autoFocus
+          required
+        />
       </div>
       {state?.error ? <p className="text-sm text-destructive">{state.error}</p> : null}
       <SubmitButton />

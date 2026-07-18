@@ -13,8 +13,10 @@ Drizzle ORM, and Neon Postgres, deployed on Vercel.
 - **Habits** — a 7-day habit grid you can tap to check off
 - **Journal** — a daily mood + reflection log
 
-Auth is a simple single-user email/password login (session stored in a signed, httpOnly JWT
-cookie) — there's no public sign-up, since this is meant for one person.
+Auth is a single shared password (no username/email field) — session stored in a signed,
+httpOnly JWT cookie for 30 days. There's no public sign-up, since this is meant for one person.
+Note that this is lighter than a full login: anyone with the password can access everything, so
+treat that password like you would any other credential.
 
 ## Tech stack
 
@@ -38,9 +40,9 @@ Copy `.env.example` to `.env` and fill in:
 ```
 DATABASE_URL=          # your Neon connection string
 SESSION_SECRET=        # generate with: openssl rand -base64 32
-SEED_USER_EMAIL=       # the email you'll log in with
+SEED_USER_EMAIL=       # internal label only — not used to log in, any value is fine
 SEED_USER_NAME=        # your name, shown in the dashboard
-SEED_USER_PASSWORD=    # the password you'll log in with (only used by the seed script)
+SEED_USER_PASSWORD=    # the single password you'll use to log in (only used by the seed script)
 ```
 
 ## 3. Install dependencies, run migrations, and seed your account
@@ -61,7 +63,7 @@ duplicates, and only seeds default subjects/habits if you don't have any yet.
 npm run dev
 ```
 
-Visit `http://localhost:3000`, and log in with the email/password from your `.env`.
+Visit `http://localhost:3000`, and log in with `SEED_USER_PASSWORD` from your `.env`.
 
 ## 5. Deploy to Vercel
 
