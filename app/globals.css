@@ -4,40 +4,60 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --background: 15 100% 98%;
+    --foreground: 348 43% 12%;
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
-    --border: 214 32% 91%;
-    --primary: 243 75% 59%;
+    --card-foreground: 348 43% 12%;
+    --card-tint: 7 100% 97%;
+    --muted: 338 100% 94%;
+    --muted-foreground: 342 17% 46%;
+    --border: 340 35% 90%;
+    --primary: 341 86% 61%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
-    --accent: 210 40% 94%;
-    --accent-foreground: 222 47% 11%;
+    --secondary: 338 100% 94%;
+    --secondary-foreground: 338 60% 22%;
+    --accent: 7 100% 97%;
+    --accent-foreground: 348 43% 12%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
-    --radius: 0.6rem;
+    --maroon: 340 60% 30%;
+    --maroon-foreground: 0 0% 100%;
+    --gold: 39 87% 56%;
+    --gold-soft: 42 100% 93%;
+    --gold-foreground: 39 100% 27%;
+    --plum: 330 32% 47%;
+    --plum-soft: 330 30% 93%;
+    --plum-foreground: 0 0% 100%;
+    --good: 149 45% 45%;
+    --radius: 0.85rem;
   }
 
   .dark {
-    --background: 222 47% 8%;
-    --foreground: 210 40% 98%;
-    --card: 222 43% 11%;
-    --card-foreground: 210 40% 98%;
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
-    --border: 217 33% 20%;
-    --primary: 243 75% 65%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
-    --accent: 217 33% 20%;
-    --accent-foreground: 210 40% 98%;
+    --background: 339 38% 10%;
+    --foreground: 346 62% 96%;
+    --card: 339 40% 14%;
+    --card-foreground: 346 62% 96%;
+    --card-tint: 339 40% 17%;
+    --muted: 341 32% 21%;
+    --muted-foreground: 340 30% 70%;
+    --border: 339 20% 25%;
+    --primary: 340 100% 72%;
+    --primary-foreground: 339 40% 12%;
+    --secondary: 341 32% 21%;
+    --secondary-foreground: 346 62% 90%;
+    --accent: 339 40% 17%;
+    --accent-foreground: 346 62% 96%;
     --destructive: 0 63% 40%;
     --destructive-foreground: 0 0% 100%;
+    --maroon: 339 63% 72%;
+    --maroon-foreground: 339 40% 12%;
+    --gold: 40 100% 67%;
+    --gold-soft: 40 45% 22%;
+    --gold-foreground: 40 100% 82%;
+    --plum: 326 33% 64%;
+    --plum-soft: 326 25% 22%;
+    --plum-foreground: 339 40% 12%;
+    --good: 149 47% 62%;
   }
 
   * {

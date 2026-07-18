@@ -8,6 +8,27 @@
       "when": 1784380166750,
       "tag": "0000_lush_firelord",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1784395993196,
+      "tag": "0001_green_invaders",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1784396743582,
+      "tag": "0002_cheerful_may_parker",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1784397451129,
+      "tag": "0003_lonely_joshua_kane",
+      "breakpoints": true
     }
   ]
 }
