@@ -6,7 +6,7 @@ import { db } from '@/lib/db';
 import { exams } from '@/lib/schema';
 import { requireUser } from '@/lib/session-helpers';
 
-const EXAM_TYPES = ['exam', 'quiz', 'osce', 'practical', 'rotation_end'] as const;
+const EXAM_TYPES = ['exam', 'quiz', 'cat', 'main_exam', 'osce', 'practical', 'rotation_end'] as const;
 
 function asExamType(value: FormDataEntryValue | null): (typeof EXAM_TYPES)[number] {
   const v = String(value ?? '');

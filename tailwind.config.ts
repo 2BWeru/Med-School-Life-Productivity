@@ -19,6 +19,7 @@ const config: Config = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
+          tint: 'hsl(var(--card-tint))',
         },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
@@ -36,6 +37,24 @@ const config: Config = {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
         },
+        maroon: {
+          DEFAULT: 'hsl(var(--maroon))',
+          foreground: 'hsl(var(--maroon-foreground))',
+        },
+        gold: {
+          DEFAULT: 'hsl(var(--gold))',
+          soft: 'hsl(var(--gold-soft))',
+          foreground: 'hsl(var(--gold-foreground))',
+        },
+        plum: {
+          DEFAULT: 'hsl(var(--plum))',
+          soft: 'hsl(var(--plum-soft))',
+          foreground: 'hsl(var(--plum-foreground))',
+        },
+        good: 'hsl(var(--good))',
+      },
+      fontFamily: {
+        display: ['var(--font-display)', 'ui-rounded', '-apple-system', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

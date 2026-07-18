@@ -9,7 +9,7 @@ import { deleteExam } from './actions';
 export type ExamCardData = {
   id: string;
   title: string;
-  examType: 'exam' | 'quiz' | 'osce' | 'practical' | 'rotation_end';
+  examType: 'exam' | 'quiz' | 'cat' | 'main_exam' | 'osce' | 'practical' | 'rotation_end';
   examDate: Date;
   notes: string | null;
   subject: { name: string; color: string } | null;
@@ -18,6 +18,8 @@ export type ExamCardData = {
 const TYPE_LABEL: Record<ExamCardData['examType'], string> = {
   exam: 'Exam',
   quiz: 'Quiz',
+  cat: 'CAT',
+  main_exam: 'Main Exam',
   osce: 'OSCE',
   practical: 'Practical',
   rotation_end: 'Rotation End',

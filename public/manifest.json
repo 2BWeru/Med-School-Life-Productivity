@@ -1,0 +1,17 @@
+{
+  "name": "Jolly",
+  "short_name": "Jolly",
+  "description": "Betty's whole life, sorted — med school, personal life, and work.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff6f3",
+  "theme_color": "#7a1f3d",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

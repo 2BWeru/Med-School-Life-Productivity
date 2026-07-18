@@ -40,6 +40,8 @@ export function AddExamForm({ subjects }: { subjects: Subject[] }) {
         <Select id="examType" name="examType" defaultValue="exam">
           <option value="exam">Exam</option>
           <option value="quiz">Quiz</option>
+          <option value="cat">CAT</option>
+          <option value="main_exam">Main exam</option>
           <option value="osce">OSCE</option>
           <option value="practical">Practical</option>
           <option value="rotation_end">Rotation end</option>
